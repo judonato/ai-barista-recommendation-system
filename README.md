@@ -84,6 +84,9 @@ Final Recommendation
 ## Estrutura do Projeto
 Project Structure
 
+├── assets/
+│   └── demo.png
+
 ├── data/
 
 │   └── coffee_sales_clean.csv
@@ -94,9 +97,9 @@ Project Structure
 
 │   └── recommender.py
 
-├── app.py
+├── .env.example
 
-├── .env
+├── app.py
 
 ├── requirements.txt
 
