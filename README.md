@@ -112,6 +112,11 @@ CLIENTE: "Quero algo para acompanhar meu café agora à tarde."
 
 BARISTA VIRTUAL: "Boa tarde! Para este momento, recomendo nosso Scone artesanal — um pãozinho amanteigado de origem escocesa que harmoniza perfeitamente com a acidez vibrante do nosso café filtrado mais pedido de hoje. Aceita essa sugestão?"
 
+## Demo
+
+![AI Barista Demo](./assets/demo.png)
+
+
 ## Evoluções Futuras
 - RAG (Retrieval-Augmented Generation): Incluir PDFs de manuais técnicos de grãos para respostas ainda mais profundas.
 
