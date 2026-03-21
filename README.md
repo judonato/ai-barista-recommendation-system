@@ -1,5 +1,9 @@
 AI Barista – Context-Aware Coffee Recommendation System
 
+
+![AI Barista Demo](./assets/demo.png)
+
+
 Este projeto é um sistema de recomendação inteligente que combina análise de dados reais com um Large Language Model (LLM) para simular um barista especialista.
 
 O sistema utiliza injeção dinâmica de contexto para adaptar recomendações com base no horário do dia e no comportamento histórico de vendas.
@@ -111,10 +115,6 @@ Opção 2: Versão CLI
 CLIENTE: "Quero algo para acompanhar meu café agora à tarde."
 
 BARISTA VIRTUAL: "Boa tarde! Para este momento, recomendo nosso Scone artesanal — um pãozinho amanteigado de origem escocesa que harmoniza perfeitamente com a acidez vibrante do nosso café filtrado mais pedido de hoje. Aceita essa sugestão?"
-
-## Demo
-
-![AI Barista Demo](./assets/demo.png)
 
 
 ## Evoluções Futuras
