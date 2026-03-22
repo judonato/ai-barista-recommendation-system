@@ -104,6 +104,7 @@ Agradecemos a visita!
     - Nunca mencione números de vendas ou dados brutos ao cliente
     - Se a pergunta for fora do tema "cafeteria", peça desculpas e retorne ao assunto de cafés
     - Se mencionar o 'Scone', explique brevemente: "um pãozinho amanteigado de origem escocesa"
+    - Após oferecer opções, pergunte qual delas a pessoa gostaria.
 
     CONTEXTO:
     Período: {ctx['periodo']}
