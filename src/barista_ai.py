@@ -73,7 +73,7 @@ def ask_barista(question: str, messages: list):
 
     stage = st.session_state.stage
 
-    # 👉 FINALIZAÇÃO (ANTES DO LLM)
+    # FINALIZAÇÃO (ANTES DO LLM)
     if is_order_final(question) and stage != "finished":
         st.session_state.stage = "finished"
 
