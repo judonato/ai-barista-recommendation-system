@@ -1,9 +1,5 @@
 import streamlit as st
-import sys
-import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "src")))
-from barista_ai import ask_barista, get_service_context
+from src.barista_ai import ask_barista, get_service_context
 
 # Configurações da página
 st.set_page_config(page_title="AI Barista - Coffee Now", page_icon="☕")
