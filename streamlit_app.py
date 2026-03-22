@@ -32,7 +32,8 @@ if prompt := st.chat_input("Como posso ajudar com seu café hoje?"):
             try:
                 response = ask_barista(prompt, st.session_state.messages)
             except Exception as e:
-                response = "⚠️ Ocorreu um erro ao gerar a recomendação. Tente novamente."
+                st.error(f"Erro real: {e}")
+                raise e
 
             st.markdown(response)
     
