@@ -36,27 +36,17 @@ def get_service_context():
             "estilo": "acolhedor e técnico"
         }
 
-def ask_barista(question: str, chat_history: list = None):
+def ask_barista(question: str):
     ctx = get_service_context()
     
     # Filtra os dados de vendas apenas para o período atual para maior precisão
     current_top = top_products_df[top_products_df['period'] == ctx['periodo']]
     context_data = current_top.to_string(index=False)
-
-    # Transformamos o histórico em texto para o modelo "lembrar"
-    history_text = ""
-    if chat_history:
-        for msg in chat_history:
-            role = "Cliente" if msg["role"] == "user" else "Barista"
-            history_text += f"{role}: {msg['content']}\n"
     
     prompt = f"""
     Você é um {ctx['persona']} de uma cafeteria de cafés especiais.
     Seu tom de voz deve ser {ctx['estilo']}.
 
-    HISTÓRICO DA CONVERSA:
-    {history_text}
-    
     CONTEXTO DO MOMENTO:
     - Período: {ctx['periodo']}
     - Foco sugerido: {ctx['foco']}
