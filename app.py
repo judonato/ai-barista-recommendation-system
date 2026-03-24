@@ -9,7 +9,7 @@ while True:
     if question.lower() == "sair":
         break
 
-    answer = ask_barista(question)
+    answer = ask_barista(question, messages)
 
     print("\nBARISTA VIRTUAL:", answer, "\n")
 
